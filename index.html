@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function display(){
+        document.getElementById('res').innerHTML+=document.getElementById('product').value+"<br>"
+        
+        document.getElementById('res').innerHTML+=document.getElementById('quant').value+"<br>"
+        document.getElementById('res').innerHTML+=document.getElementById('price').value+"<br>"
+             
+             
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome to IACSD Store</h1>
+    <form action="get">
+        <label for="product">Product</label>
+        <input type="text" name="product" id="product">
+        <label for="quant">Quantity</label>
+        <input type="number" name="quant" id="quant">
+        <label for="price">Price</label>
+        <input type="number" name="price" id="price">
+    </form>
+    <button type="submit" onclick="display()"> Display</button>
+    <div id="res">
+
+    </div>
+</body>
+</html>
